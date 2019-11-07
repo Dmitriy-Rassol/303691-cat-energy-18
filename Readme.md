@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дима Рассоленко](https://up.htmlacademy.ru/adaptive/18/user/303691).
-* Наставник: `Неизвестно`.
+* Наставник: Эрик Спичак.
 
 ---
 
