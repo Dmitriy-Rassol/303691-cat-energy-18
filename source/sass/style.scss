@@ -1,0 +1,59 @@
+@import "header",
+"page-main.scss",
+"page-footer.scss",
+"add-catalog.scss",
+"catalog.scss",
+"cooperation.scss",
+"example.scss",
+"head-info.scss",
+"how-it-works.scss",
+"main-nav.scss",
+"program.scss",
+"selection.scss",
+url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+$oswald-font:'Oswald', sans-serif;
+body {
+  background: #ffffff;
+  font-family: $oswald-font;
+}
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.button {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #68b738;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  &--gray{
+    color: #444;
+    background-color: #f2f2f2;
+  }
+}

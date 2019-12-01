@@ -1,0 +1,21 @@
+.page-header{
+  padding-top: 10px;
+}
+.page-header__main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-logo{
+    width: 191px;
+    height: 38px;
+    background:url("../img/logo-mobile.svg") center no-repeat;
+    background-size: cover;
+  }
+  &-toggle{
+    background: url("../img/icon-mobile-menu.svg") center no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 19px;
+    border: none;
+  }
+}

@@ -1,0 +1,62 @@
+.page-footer{
+  background: #f2f2f2;
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+  &__academy-block{
+    padding-top: 14px;
+    padding-bottom: 22px;
+
+  }
+  &__academy-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__academy-text{
+    color: #666666;
+    position: relative;
+    font-family: "Arial",sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  &__academy-icon{
+    fill: #666666;
+  }
+}
+.social-list{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 23px 0 17px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  &__item{
+    text-align: center;
+    width: 55px;
+  }
+  &__link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 20px;
+    &--vk{
+      background:url("../img/icon-vk.svg") center no-repeat;
+    }
+    &--instagram{
+      background:url("../img/icon-insta.svg") center no-repeat;
+    }
+    &--facebook{
+      background:url("../img/icon-fb.svg") center no-repeat;
+    }
+  }
+}
