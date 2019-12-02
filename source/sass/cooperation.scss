@@ -34,12 +34,14 @@
 
   &__map {
     margin-bottom: -2px;
+
+    .map {
+      border: 0;
+    }
   }
 
   &--index {
     background: #ffffff;
   }
 }
-.map {
-  border: 0;
-}
+
