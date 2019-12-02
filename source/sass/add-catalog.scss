@@ -1,12 +1,12 @@
-.add-catalog{
+.add-catalog {
   padding-top: 29px;
   padding-bottom: 35px;
 
-  &__wrapper{
+  &__wrapper {
     position: relative;
   }
 
-  &__wrapper::before{
+  &__wrapper::before {
     content: "";
     z-index: -1;
     width: 100%;
@@ -17,7 +17,7 @@
     background-color: #68b738;
   }
 
-  &__title{
+  &__title {
     font-weight: 400;
     color: #111111;
     display: inline-block;
@@ -28,32 +28,32 @@
     padding-right: 23px;
     margin-top: 0;
     margin-bottom: 33px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
-  &__list{
+  &__list {
     list-style: none;
     padding: 0;
     border-top: 1px solid #cdcdcd;
   }
 
-  &__promo{
+  &__promo {
     text-align: center;
     padding-top: 65px;
     padding-bottom: 44px;
     margin-top: 39px;
-    background-image: url(../img/gift-photo-mobile@1x.jpg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
   }
 
-  &__icon-gift{
+  &__icon-gift {
     fill: #ffffff;
   }
 
-  &__text{
-    font-family: "Arial",sans-serif;
+  &__text {
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.2em;
     color: #ffffff;
@@ -62,12 +62,13 @@
     margin: 60px auto 0;
   }
 }
-.add-product{
+
+.add-product {
   padding-top: 13px;
   padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
 
-  &__title{
+  &__title {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -77,8 +78,8 @@
     margin-bottom: 11px;
   }
 
-  &__options{
-    font-family: "Arial",sans-serif;
+  &__options {
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 14px;
     width: 100%;
@@ -86,14 +87,14 @@
     border-spacing: 0;
   }
 
-  &__options-cell{
+  &__options-cell {
     padding: 2px 0;
 
-    &--quantity{
+    &--quantity {
       text-align: left;
     }
 
-    &--price{
+    &--price {
       text-align: right;
     }
   }

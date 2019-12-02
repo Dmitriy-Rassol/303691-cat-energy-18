@@ -1,13 +1,14 @@
-.head-info{
-  &__wrapper{
+.head-info {
+  &__wrapper {
     padding-top: 29px;
-    background-image: url(../img/index-background-mobile@1x.jpg);
+    background-image: url("../img/index-background-mobile@1x.jpg");
     background-size: 100% 305px;
     background-position: center top;
     background-repeat: no-repeat;
   }
-  &__title{
-    color:#ffffff;
+
+  &__title {
+    color: #ffffff;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -15,7 +16,8 @@
     text-align: center;
     margin-top: 0;
   }
-  &__text{
+
+  &__text {
     color: #ffffff;
     text-align: center;
     margin-top: 0;
@@ -23,11 +25,13 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
-  &__image{
+
+  &__image {
     display: block;
     margin: 0 auto;
   }
-  &__button{
+
+  &__button {
     font-size: 14px;
     line-height: 18px;
     width: 100%;

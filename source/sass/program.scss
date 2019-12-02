@@ -1,14 +1,16 @@
-.program{
-  &__list{
+.program {
+  &__list {
     list-style: none;
     padding: 0;
   }
-  &__item{
+
+  &__item {
     position: relative;
     padding: 21px;
     margin-top: 22px;
     background-color: #f2f2f2;
-    &--slim::after{
+
+    &--slim::after {
       position: absolute;
       content: "";
       background: url("../img/icon-cat-slim.svg") center no-repeat;
@@ -18,27 +20,30 @@
       top: 23px;
       left: 30px;
     }
-    &--pro::after{
+
+    &--pro::after {
       position: absolute;
       content: "";
       background: url("../img/icon-cat-pro.svg") center no-repeat;
       background-size: cover;
       width: 67px;
       height: 28px;
-      top:36px;
+      top: 36px;
       left: 13px;
     }
   }
-  &__item::before{
+
+  &__item::before {
     position: absolute;
     content: "";
-    background:#68b738;
+    background: #68b738;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    top:25px;
+    top: 25px;
   }
-  &__title{
+
+  &__title {
     position: relative;
     display: flex;
     align-items: center;
@@ -50,14 +55,16 @@
     margin-top: 10px;
     margin-bottom: 12px;
   }
-  &__desc{
-    font-family: "Arial",sans-serif;
+
+  &__desc {
+    font-family: "Arial", sans-serif;
     width: 100%;
     padding-bottom: 21px;
     margin-top: 17px;
     border-bottom: 1px solid #d9d9d9;
   }
-  &__link{
+
+  &__link {
     position: relative;
     display: flex;
     align-items: center;
@@ -70,7 +77,8 @@
     text-decoration: none;
     width: auto;
   }
-  &__link::after{
+
+  &__link::after {
     position: absolute;
     content: "";
     display: flex;
