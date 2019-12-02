@@ -35,95 +35,97 @@
 </header>
 <main>
   <section class="selection">
-    <div class="selection__wrapper">
-      <div class="title-block">
-        <h2 class="title-block__title">Подбор программы</h2>
-        <p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
-      <form action="https://echo.htmlacademy.ru" class="selection__form" method="get">
-        <div class="fields__wrapper">
-          <div class="fields__set fields__set--data">
-            <div class="fields__block">
-              <label for="nickname" class="fields__label">Имя:*</label>
-              <input type="text" class="fields__text-field" id="nickname" name="catname" placeholder="Барсик">
-            </div>
-            <div class="fields__block">
-              <label for="weight" class="fields__label">Вес (кг):*</label>
-              <input type="text" class="fields__text-field" id="weight" name="weight" placeholder="7">
-            </div>
-            <div class="fields__block">
-              <label for="age" class="fields__label">Возраст (лет):</label>
-              <input type="text" class="fields__text-field" id="age" name="age" placeholder="7">
-            </div>
-          </div>
-          <div class="fields__set fields__set--program">
-            <ul class="program-type-list">
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="">
-                <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
-              </li>
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
-                <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
-              </li>
-              <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
-                <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </div>
-          <div class="fields__set fields__set--contacts">
-            <div class="fields__head">
-              <h2 class="fields__title">Контактные данные (владельца кота)</h2>
-            </div>
-            <div class="fields__inner">
-              <div class="fields__block">
-                <label for="email" class="fields__label">E-mail:*</label>
-                <input type="email" class="fields__text-field" id="email" name="email" placeholder="kuklachev@gmail.com">
-                <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Почта">
-              </div>
-              <div class="fields__block">
-                <label for="phone" class="fields__label">Телефон:*</label>
-                <input type="tel" class="fields__text-field" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Телефон">
-              </div>
-            </div>
-          </div>
-          <div class="fields__set fields__set--description">
-            <div class="fields__head">
-              <h2 class="fields__title">Комментарий</h2>
-            </div>
-            <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-          <div class="fields__set fields__set--add">
-            <div class="fields__head">
-              <h2 class="fields__title">Дополнительно</h2>
-            </div>
-            <ul class="fields__list">
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked="">
-                <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="water" id="water">
-                <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="milk" id="milk">
-                <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
-              </li>
-              <li class="add-list__item">
-                <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
-                <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
-              </li>
-            </ul>
-          </div>
-          <div class="fields__button-block">
-            <button class="fields__button button" type="submit">Отправить заявку</button>
-            <small class="fields__note">* — Обязательные поля</small>
-          </div>
+    <div class="container">
+      <div class="selection__wrapper">
+        <div class="selection__heading">
+          <h2 class="selection__heading--title">Подбор программы</h2>
+          <p class="selection__heading--text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-      </form>
+        <form action="https://echo.htmlacademy.ru" class="selection__form" method="get">
+          <div class="fields__wrapper">
+            <div class="fields__set fields__set--data">
+              <div class="fields__block">
+                <label for="nickname" class="fields__label">Имя:*</label>
+                <input type="text" class="fields__text-field" id="nickname" name="catname" placeholder="Барсик">
+              </div>
+              <div class="fields__block">
+                <label for="weight" class="fields__label">Вес (кг):*</label>
+                <input type="text" class="fields__text-field" id="weight" name="weight" placeholder="7">
+              </div>
+              <div class="fields__block">
+                <label for="age" class="fields__label">Возраст (лет):</label>
+                <input type="text" class="fields__text-field" id="age" name="age" placeholder="7">
+              </div>
+            </div>
+            <div class="fields__set fields__set--program">
+              <ul class="program-type-list">
+                <li class="program-type-list__item">
+                  <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="">
+                  <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+                </li>
+                <li class="program-type-list__item">
+                  <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
+                  <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+                </li>
+                <li class="program-type-list__item">
+                  <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
+                  <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
+            <div class="fields__set fields__set--contacts">
+              <div class="fields__head">
+                <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+              </div>
+              <div class="fields__inner">
+                <div class="fields__block">
+                  <label for="email" class="fields__label">E-mail:*</label>
+                  <input type="email" class="fields__text-field" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Почта">
+                </div>
+                <div class="fields__block">
+                  <label for="phone" class="fields__label">Телефон:*</label>
+                  <input type="tel" class="fields__text-field" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                  <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Телефон">
+                </div>
+              </div>
+            </div>
+            <div class="fields__set fields__set--description">
+              <div class="fields__head">
+                <h2 class="fields__title">Комментарий</h2>
+              </div>
+              <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+            <div class="fields__set fields__set--add">
+              <div class="fields__head">
+                <h2 class="fields__title">Дополнительно</h2>
+              </div>
+              <ul class="fields__list">
+                <li class="add-list__item">
+                  <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked="">
+                  <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
+                </li>
+                <li class="add-list__item">
+                  <input type="checkbox" class="add-list__input" name="water" id="water">
+                  <label for="water" class="add-list__label" tabindex="0">Питьевая вода</label>
+                </li>
+                <li class="add-list__item">
+                  <input type="checkbox" class="add-list__input" name="milk" id="milk">
+                  <label for="milk" class="add-list__label" tabindex="0">Молоко</label>
+                </li>
+                <li class="add-list__item">
+                  <input type="checkbox" class="add-list__input" name="vitamins" id="vitamins">
+                  <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
+                </li>
+              </ul>
+            </div>
+            <div class="fields__button-block">
+              <button class="fields__button button" type="submit">Отправить заявку</button>
+              <small class="fields__note">* — Обязательные поля</small>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
   <section class="cooperation">
