@@ -1,0 +1,39 @@
+.main-nav {
+  display: block;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__link {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+.main-nav__item--active {
+  cursor: pointer;
+
+  .main-nav__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
