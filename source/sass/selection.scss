@@ -1,0 +1,257 @@
+.selection {
+  border-top: 1px solid #e6e6e6;
+
+  &__heading {
+    padding-top: 14px;
+    padding-bottom: 29px;
+
+    &--title {
+      font-size: 36px;
+      line-height: 60px;
+      font-weight: 400;
+      color: #111111;
+      margin: 0;
+    }
+
+    &--text {
+      text-transform: uppercase;
+      color: #111111;
+      width: 85%;
+      margin-top: 27px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fields {
+  padding-top: 10px;
+  padding-bottom: 31px;
+
+  &__set {
+    padding-bottom: 9px;
+
+    &--personal {
+      padding-bottom: 24px;
+    }
+
+    &--program {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #ededed;
+    }
+
+    &--contact {
+      padding-top: 7px;
+    }
+
+    &--add {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__head::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    right: -20px;
+    background-color: #68b738;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #111111;
+    max-width: 205px;
+    padding-right: 24px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #111111;
+    white-space: nowrap;
+  }
+
+  &__text-field {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  &__inner {
+    margin-top: 15px;
+  }
+
+  &__textarea {
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    width: 100%;
+    height: 150px;
+    padding: 12px 10px 12px 15px;
+    margin-top: 14px;
+    resize: none;
+  }
+
+  &__icon {
+    position: absolute;
+
+    &--mail {
+      right: 16px;
+      top: 14px;
+    }
+
+    &--phone {
+      right: 13px;
+      top: 12px;
+    }
+  }
+
+  &__button-block {
+    text-align: center;
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  &__note {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.program-type-list {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0 0;
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked + &__label::after {
+    display: block;
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #111111;
+    width: 100%;
+    padding-left: 45px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+  }
+
+  &__label::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+}
+
+.add-list {
+  padding: 0;
+  list-style: none;
+  margin: 14px 0 0;
+
+  &__item {
+    margin-bottom: 13px;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked + &__label::before {
+    background-image: url("../img/icon-tick.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #111111;
+    padding-left: 45px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+  }
+}

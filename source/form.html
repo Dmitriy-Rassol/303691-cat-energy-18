@@ -35,14 +35,14 @@
 </header>
 <main>
   <section class="selection">
-    <div class="selection__wrapper">
-      <div class="title-block">
-        <h2 class="title-block__title">Подбор программы</h2>
-        <p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <div class="container">
+      <div class="selection__heading">
+        <h2 class="selection__heading--title">Подбор программы</h2>
+        <p class="selection__heading--text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
-      <form action="https://echo.htmlacademy.ru" class="selection__form" method="get">
+      <form class="selection__form fields" action="https://echo.htmlacademy.ru" method="get">
         <div class="fields__wrapper">
-          <div class="fields__set fields__set--data">
+          <div class="fields__set fields__set--personal">
             <div class="fields__block">
               <label for="nickname" class="fields__label">Имя:*</label>
               <input type="text" class="fields__text-field" id="nickname" name="catname" placeholder="Барсик">
@@ -59,7 +59,7 @@
           <div class="fields__set fields__set--program">
             <ul class="program-type-list">
               <li class="program-type-list__item">
-                <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="">
+                <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked>
                 <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
               </li>
               <li class="program-type-list__item">
@@ -80,12 +80,25 @@
               <div class="fields__block">
                 <label for="email" class="fields__label">E-mail:*</label>
                 <input type="email" class="fields__text-field" id="email" name="email" placeholder="kuklachev@gmail.com">
-                <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Почта">
+                <svg class="fields__icon fields__icon--mail" width="17" height="13">
+                  <use xlink:href="#icon-mail">
+                    <svg id="icon-mail" viewBox="0 0 17 13">
+                      <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"></path>
+                    </svg>
+                  </use>
+                </svg>
               </div>
               <div class="fields__block">
                 <label for="phone" class="fields__label">Телефон:*</label>
                 <input type="tel" class="fields__text-field" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                <img class="cooperation__map--image" src="https://via.placeholder.com/50x50" width="50" height="50" alt="Телефон">
+                <svg class="fields__icon fields__icon--phone" width="21" height="20">
+                  <use xlink:href="#icon-phone">
+                    <svg id="icon-phone" viewBox="0 0 20 20">
+                      <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"></path>
+                      <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7	c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6	C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4	C7.8,20,8.1,19.7,8.1,19.4z"></path>
+                    </svg>
+                  </use>
+                </svg>
               </div>
             </div>
           </div>
@@ -99,7 +112,7 @@
             <div class="fields__head">
               <h2 class="fields__title">Дополнительно</h2>
             </div>
-            <ul class="fields__list">
+            <ul class="fields__list add-list">
               <li class="add-list__item">
                 <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked="">
                 <label for="sweetener" class="add-list__label" tabindex="0">Сахарозаменитель</label>
