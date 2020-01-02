@@ -1,3 +1,7 @@
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
+
 .head-info {
   &__wrapper {
     padding-top: 29px;
@@ -38,5 +42,96 @@
     padding-top: 14px;
     padding-bottom: 14px;
     margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .head-info {
+    padding-top: 24px;
+    padding-bottom: 502px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 30px 255px;
+    background-size: 709px 609px;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+      padding-left: 90px;
+      background: transparent;
+    }
+
+    &__title {
+      color: #111111;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 60px;
+      width: 420px;
+      margin-bottom: 43px;
+      text-align: left;
+    }
+
+    &__text {
+      color: #111111;
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      padding-bottom: 18px;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__button {
+      font-size: 20px;
+      line-height: 20px;
+      width: 246px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-info {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background-image: none;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      height: 602px;
+      padding-left: 84px;
+      background: transparent;
+    }
+
+    &__title {
+      order: 1;
+      margin-top: 79px;
+    }
+
+    &__text {
+      order: 2;
+      margin-bottom: 50px;
+    }
+
+    &__picture {
+      order: 4;
+    }
+
+    &__image {
+      display: inline-block;
+      width: 597px;
+      height: 499px;
+      margin-left: -48px;
+    }
+
+    &__button {
+      order: 3;
+    }
   }
 }

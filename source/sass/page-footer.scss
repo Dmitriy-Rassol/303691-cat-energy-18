@@ -1,3 +1,7 @@
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
+
 .page-footer {
   background: #f2f2f2;
 
@@ -7,6 +11,7 @@
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 27px;
+    outline: none;
   }
 
   &__academy-block {
@@ -19,6 +24,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__academy-text {
@@ -32,6 +41,42 @@
 
   &__academy-icon {
     fill: #666666;
+  }
+
+  &__academy-link:hover &__academy-icon {
+    fill: #68b738;
+  }
+
+  &__academy-link:focus &__academy-icon {
+    fill: #68b738;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 55px;
+    padding-bottom: 49px;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      justify-content: flex-start;
+      min-width: 162px;
+      padding: 0;
+    }
+
+    &__academy-block {
+      min-width: 162px;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__academy-link {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -53,20 +98,99 @@
 
   &__link {
     display: inline-block;
-    vertical-align: middle;
-    width: 30px;
-    height: 20px;
+    vertical-align: top;
+    outline: none;
+  }
+
+  &__icon {
+    fill: #666666;
 
     &--vk {
-      background: url("../img/icon-vk.svg") center no-repeat;
+      width: 22px;
+      height: 12px;
     }
 
-    &--instagram {
-      background: url("../img/icon-insta.svg") center no-repeat;
+    &--inst {
+      width: 16px;
+      height: 16px;
     }
 
-    &--facebook {
-      background: url("../img/icon-fb.svg") center no-repeat;
+    &--fb {
+      width: 10px;
+      height: 19px;
     }
+
+    &:hover {
+      fill: #73bc47;
+    }
+
+    &:focus {
+      fill: #73bc47;
+    }
+
+    &:active {
+      fill: #73bc47;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    min-width: 380px;
+    border: none;
+    padding: 0;
+    justify-content: center;
+
+    &__item {
+      text-align: center;
+      width: 55px;
+    }
+
+    &__icon {
+      fill: #666666;
+
+      &--vk {
+        width: 31px;
+        height: 19px;
+      }
+
+      &--inst {
+        width: 23px;
+        height: 23px;
+      }
+
+      &--fb {
+        width: 14px;
+        height: 28px;
+        margin-top: -5px;
+        margin-left: -14px;
+      }
+    }
+  }
+}
+
+.footer__logo {
+  width: 130px;
+  height: 25px;
+  fill: #111111;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__logo {
+    min-width: 128px;
+    height: 24px;
   }
 }

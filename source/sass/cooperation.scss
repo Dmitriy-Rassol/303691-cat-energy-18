@@ -1,3 +1,7 @@
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
+
 .cooperation {
   background-color: #f2f2f2;
 
@@ -32,15 +36,81 @@
     margin: 0;
   }
 
-  &__map {
-    margin-bottom: -2px;
+  &--index {
+    background: #ffffff;
+  }
+}
 
-    .map {
-      border: 0;
+.map {
+  border: 0;
+  margin-bottom: -2px;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation {
+    &__inner {
+      padding: 63px 41px 59px;
+    }
+
+    &__title {
+      width: 160px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__adress {
+      width: 170px;
+      text-align: right;
+    }
+
+    &__street {
+      margin-bottom: 19px;
+    }
+
+    &--index {
+      background: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+
+    &__inner {
+      position: absolute;
+      width: 570px;
+      top: 97px;
+      padding: 72px 77px 66px;
+      background: #ffffff;
+    }
+
+    &__title {
+      width: 50%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__adress {
+      width: 50%;
+      text-align: left;
+    }
+
+    &__street {
+      margin-bottom: 30px;
+      width: 155px;
+    }
+
+    &--index {
+      background: #ffffff;
+    }
+
+    &__map {
+      margin-bottom: -2px;
     }
   }
 
-  &--index {
-    background: #ffffff;
+  .map {
+    height: 400px;
   }
 }

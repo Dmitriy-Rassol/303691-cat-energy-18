@@ -1,24 +1,121 @@
-.page-header {
-  padding-top: 10px;
-}
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
 
 .page-header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &-logo {
     width: 191px;
     height: 38px;
     background: url("../img/logo-mobile.svg") center no-repeat;
     background-size: cover;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &-toggle {
-    background: url("../img/icon-mobile-menu.svg") center no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 19px;
     border: none;
+    background: transparent;
+    outline: none;
   }
 }
+
+.main-toggle-icon {
+  margin: 0 auto;
+
+  &--open {
+    display: block;
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .page-header {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__main {
+      justify-content: flex-start;
+      min-width: 192px;
+      padding: 0;
+
+      &-logo {
+        width: 180px;
+        height: 58px;
+        background: url("../img/logo-tablet.svg") center no-repeat;
+        background-size: cover;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:active {
+          opacity: 0.6;
+        }
+      }
+
+      &-toggle {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: relative;
+    padding-top: 24px;
+
+    &--index::before {
+      content: "";
+      position: absolute;
+      min-width: 720px;
+      height: 696px;
+      background: url("../img/index-background-desktop@1x.jpg") center no-repeat;
+      background-size: cover;
+      z-index: -1;
+      left: 50%;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .page-header__main {
+    &-logo {
+      width: 202px;
+      height: 59px;
+      background: url("../img/logo-desktop.svg") center no-repeat;
+      background-size: cover;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
