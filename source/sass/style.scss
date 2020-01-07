@@ -1,6 +1,17 @@
 @import "header", "page-footer.scss", "add-catalog.scss", "catalog.scss", "cooperation.scss", "example.scss", "head-info.scss", "how-it-works.scss", "main-nav.scss", "program.scss", "selection.scss";
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
+
 *,
 *::before,
 *::after {
@@ -15,11 +26,28 @@ $oswald-font:"Oswald", sans-serif;
 body {
   background: #ffffff;
   font-family: $oswald-font;
+  overflow-x: hidden;
 }
 
 .container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .visually-hidden {
@@ -39,14 +67,40 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: #68b738;
-  padding-top: 10px;
-  padding-bottom: 9px;
   border: 0;
   outline: 0;
   cursor: pointer;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.31);
+  }
+
   &--gray {
     color: #444444;
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+      color: #444444;
+    }
+
+    &:focus {
+      background-color: #ebebeb;
+      color: #444444;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
