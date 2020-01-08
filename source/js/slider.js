@@ -30,4 +30,3 @@ if (innerWidth >= tabletWidth) {
     imgAfter.style.width = '100%';
   })
 }
-
