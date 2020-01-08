@@ -19,4 +19,3 @@ if (progress) {
     progressToggle.classList.add('example__progress-toggle--after');
   })
 }
-
