@@ -57,8 +57,9 @@
       <h1 class="head-info__title">Функциональное питание для котов</h1>
       <p class="head-info__text">Занялся собой? Займись котом!</p>
       <picture class="head-info__picture">
-        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x">
-        <img class="head-info__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Продукт">
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+        <img class="head-info__image" src="img/index-can-mobile@1x.png"  srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукт">
       </picture>
       <a class="button head-info__button"  href="form.html">Подобрать программу</a>
     </header>
@@ -137,25 +138,25 @@
       <ul class="how-it-works__list">
         <li class="how-it-works__item how-it-works__item--food">
           <div class="how-it-works__item--image-block">
-            <img class="how-it-works_item--image" src="img/advantage-leaf@1x.png" width="50" height="50" alt="Питательные вещества">
+            <img class="how-it-works_item--image" src="img/advantage-leaf@1x.png"  srcset="img/advantage-leaf@2x.png 2x" width="50" height="50" alt="Питательные вещества">
           </div>
           <p class="how-it-works__item--text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="how-it-works__item how-it-works__item--fast">
           <div class="how-it-works__item--image-block">
-            <img class="how-it-works_item--image" src="img/advantage-powder@1x.png" width="50" height="50" alt="Питательные вещества">
+            <img class="how-it-works_item--image" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" width="50" height="50" alt="Питательные вещества">
           </div>
           <p class="how-it-works__item--text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="how-it-works__item how-it-works__item--meal">
           <div class="how-it-works__item--image-block">
-            <img class="how-it-works_item--image" src="img/advantage-dining@1x.png" width="50" height="50" alt="Питательные вещества">
+            <img class="how-it-works_item--image" src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" width="50" height="50" alt="Питательные вещества">
           </div>
           <p class="how-it-works__item--text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="how-it-works__item how-it-works__item--result">
           <div class="how-it-works__item--image-block">
-            <img class="how-it-works_item--image" src="img/advantage-clock@1x.png" width="50" height="50" alt="Питательные вещества">
+            <img class="how-it-works_item--image" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" width="50" height="50" alt="Питательные вещества">
           </div>
           <p class="how-it-works__item--text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
@@ -187,8 +188,20 @@
         </div>
         <div class="example__progress">
           <div class="example__progress-wrapper">
-            <div class="example__image example__image--before"></div>
-            <div class="example__image example__image--after"></div>
+            <div  class="example__image example__image--before">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__image--size-before" src="img/before-mobile@1x.png"  srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Продукт">
+              </picture>
+            </div>
+            <div class="example__image example__image--after">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__image--size-after" src="img/after-mobile@1x.png"  srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Продукт">
+              </picture>
+            </div>
           </div>
           <div class="example__buttons-block">
             <button class="example__progress-button example__progress-button--before" type="button">Было</button>
