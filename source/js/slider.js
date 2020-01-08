@@ -25,7 +25,6 @@ if (innerWidth >= tabletWidth) {
     imgBefore.style.width = '100%';
     imgAfter.style.width = '0%';
   })
-
   btnAfter.addEventListener('click', function () {
     imgBefore.style.width = '0%';
     imgAfter.style.width = '100%';
