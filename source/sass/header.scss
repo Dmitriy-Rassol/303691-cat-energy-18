@@ -1,6 +1,7 @@
 $tablet-width: 768px;
 $desktop-width: 1300px;
 $mobile-width-only: 767px;
+$retina-dppx: 1.5dppx;
 
 .page-header__main {
   display: flex;
@@ -98,6 +99,11 @@ $mobile-width-only: 767px;
       left: 50%;
       right: 0;
       top: 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 
@@ -116,5 +122,12 @@ $mobile-width-only: 767px;
         opacity: 0.6;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  .header--index::before {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: cover;
   }
 }
