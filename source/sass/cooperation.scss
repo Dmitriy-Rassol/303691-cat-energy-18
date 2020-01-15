@@ -6,8 +6,8 @@ $mobile-width-only: 767px;
   background-color: #f2f2f2;
 
   &__inner {
-    padding-top: 28px;
-    padding-bottom: 26px;
+    padding-top: 29px;
+    padding-bottom: 27px;
     display: flex;
     justify-content: space-between;
   }
@@ -18,12 +18,13 @@ $mobile-width-only: 767px;
     font-weight: 400;
     text-transform: uppercase;
     color: #111111;
-    width: 40%;
+    width: 50%;
     margin: 0;
   }
 
   &__adress {
     font-family: "Arial", sans-serif;
+    font-size: 14px;
     line-height: 20px;
     width: 50%;
   }
@@ -49,7 +50,7 @@ $mobile-width-only: 767px;
 @media (min-width: $tablet-width) {
   .cooperation {
     &__inner {
-      padding: 63px 41px 59px;
+      padding: 64px 41px 57px;
     }
 
     &__title {
@@ -59,17 +60,22 @@ $mobile-width-only: 767px;
     }
 
     &__adress {
+      font-size: 16px;
       width: 170px;
       text-align: right;
     }
 
     &__street {
-      margin-bottom: 19px;
+      margin-bottom: 22px;
     }
 
     &--index {
       background: #ffffff;
     }
+  }
+
+  .map {
+    height: 396px;
   }
 }
 
@@ -92,12 +98,12 @@ $mobile-width-only: 767px;
     }
 
     &__adress {
-      width: 50%;
+      width: 40%;
       text-align: left;
     }
 
     &__street {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       width: 155px;
     }
 

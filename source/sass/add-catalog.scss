@@ -2,6 +2,7 @@ $tablet-width: 768px;
 $desktop-width: 1300px;
 $mobile-width-only: 767px;
 $retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
 
 .add-catalog {
   padding-top: 29px;
@@ -17,7 +18,7 @@ $retina-dppx: 1.5dppx;
     width: 100%;
     height: 3px;
     position: absolute;
-    top: 12px;
+    top: 14px;
     right: -20px;
     background-color: #68b738;
   }
@@ -32,7 +33,7 @@ $retina-dppx: 1.5dppx;
     width: auto;
     padding-right: 23px;
     margin-top: 0;
-    margin-bottom: 33px;
+    margin-bottom: 17px;
     background-color: #ffffff;
   }
 
@@ -46,13 +47,13 @@ $retina-dppx: 1.5dppx;
     text-align: center;
     padding-top: 65px;
     padding-bottom: 44px;
-    margin-top: 39px;
+    margin-top: 42px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
       background-size: cover;
     }
@@ -75,7 +76,7 @@ $retina-dppx: 1.5dppx;
 
 .add-product {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #cdcdcd;
 
   &__title {
@@ -85,7 +86,7 @@ $retina-dppx: 1.5dppx;
     color: #111111;
     line-height: 16px;
     margin-top: 0;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   &__options {
@@ -93,7 +94,7 @@ $retina-dppx: 1.5dppx;
     font-size: 14px;
     line-height: 14px;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     border-spacing: 0;
   }
 
@@ -109,7 +110,12 @@ $retina-dppx: 1.5dppx;
     }
   }
 
-  @media (min-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+  &__button {
+    padding-top: 11px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $mobile-width-only) and (min-resolution: $retina-dppx), (min-width: $mobile-width-only) and (min-resolution: $retina-dpi) {
     .add-catalog__promo {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
       background-size: cover;
@@ -120,11 +126,11 @@ $retina-dppx: 1.5dppx;
 @media (min-width: $tablet-width) {
   .add-catalog {
     padding-bottom: 76px;
-    margin-top: -25px;
+    padding-top: 4px;
 
     &__wrapper::before {
       width: 110%;
-      top: 20px;
+      top: 22px;
       right: -30px;
     }
 
@@ -133,7 +139,7 @@ $retina-dppx: 1.5dppx;
       line-height: 36px;
       padding-left: 36px;
       padding-right: 36px;
-      margin-bottom: 79px;
+      margin-bottom: 64px;
     }
 
     &__list {
@@ -145,10 +151,10 @@ $retina-dppx: 1.5dppx;
       justify-content: space-between;
       align-items: center;
       padding: 65px 110px 71px 91px;
-      margin-top: 69px;
+      margin-top: 68px;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
         background-image: url("../img/gift-photo-tablet@2x.jpg");
         background-size: cover;
       }
@@ -165,13 +171,13 @@ $retina-dppx: 1.5dppx;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px 37px 29px 38px;
+    padding: 25px 36px 28px;
 
     &__title {
       font-size: 20px;
       line-height: 20px;
       width: 30%;
-      margin-bottom: 25px;
+      margin-bottom: 26px;
     }
 
     &__options {
@@ -191,8 +197,8 @@ $retina-dppx: 1.5dppx;
 
     &__button {
       width: 100%;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding-top: 11px;
+      padding-bottom: 11px;
     }
   }
 
@@ -200,7 +206,7 @@ $retina-dppx: 1.5dppx;
     border: none;
   }
 
-  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx), (min-width: $tablet-width) and (min-resolution: $retina-dpi) {
     .add-catalog__promo {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
       background-size: cover;
@@ -211,11 +217,15 @@ $retina-dppx: 1.5dppx;
 @media (min-width: $desktop-width) {
   .add-catalog {
     padding-bottom: 86px;
-    margin-top: -82px;
+    padding-top: 0;
+
+    &__wrapper {
+      margin-top: 10px;
+    }
 
     &__wrapper::before {
       width: 112%;
-      top: 20px;
+      top: 22px;
       right: -74px;
     }
 
@@ -229,8 +239,8 @@ $retina-dppx: 1.5dppx;
       font-size: 36px;
       line-height: 36px;
       padding-left: 36px;
-      padding-right: 36px;
-      margin-bottom: 79px;
+      padding-right: 34px;
+      margin-bottom: 80px;
       margin-left: -35px;
     }
 
@@ -240,21 +250,21 @@ $retina-dppx: 1.5dppx;
       border-left: 0;
       border-right: 0;
       margin: 0;
-      width: 900px;
+      width: 895px;
     }
 
     &__promo {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 65px 42px 78px;
+      padding: 66px 42px 43px;
       margin-top: 0;
       background-image: url("../img/gift-photo-desktop@1x.jpg");
       background-size: cover;
       width: 245px;
       flex-direction: column;
 
-      @media (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
         background-image: url("../img/gift-photo-desktop@2x.jpg");
         background-size: cover;
       }
@@ -263,7 +273,7 @@ $retina-dppx: 1.5dppx;
     &__text {
       text-align: center;
       width: 175px;
-      margin: 7px 0 0;
+      margin: 63px 0 0;
     }
   }
 
@@ -271,24 +281,20 @@ $retina-dppx: 1.5dppx;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 17px 0 17px;
+    padding: 15px 0 16px;
 
     &__title {
-      font-size: 20px;
-      line-height: 20px;
-      width: 33%;
-      margin-bottom: 0;
+      width: 245px;
+      margin: 0 81px 0 0;
       align-self: center;
       justify-content: flex-start;
     }
 
     &__options {
-      font-size: 16px;
-      line-height: 20px;
-      width: 33%;
-      margin-top: 12px;
+      width: 288px;
+      margin-right: 36px;
+      margin-top: 14px;
       margin-bottom: 0;
-      justify-content: flex-start;
     }
 
     &__options-cell--quantity {
@@ -297,12 +303,13 @@ $retina-dppx: 1.5dppx;
 
     &__options-cell--price {
       text-align: left;
+      width: 46px;
     }
 
     &__button {
-      width: 33%;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      width: 245px;
+      padding-top: 11px;
+      padding-bottom: 11px;
     }
   }
 
@@ -310,9 +317,9 @@ $retina-dppx: 1.5dppx;
     border: none;
   }
 
-  @media (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dppx), (min-width: $desktop-width) and (min-resolution: $retina-dpi) {
     .add-catalog__promo {
-      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
       background-size: cover;
     }
   }

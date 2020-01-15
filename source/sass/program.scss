@@ -3,6 +3,9 @@ $desktop-width: 1300px;
 $mobile-width-only: 767px;
 
 .program {
+  margin-top: 23px;
+  margin-bottom: -1px;
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +18,8 @@ $mobile-width-only: 767px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-left: 2px;
+    margin-top: -2px;
     background-color: #68b738;
   }
 
@@ -24,7 +29,7 @@ $mobile-width-only: 767px;
     &--slim {
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -57%);
     }
 
     &--pro {
@@ -41,8 +46,8 @@ $mobile-width-only: 767px;
 
   &__item {
     position: relative;
-    padding: 21px;
-    margin-bottom: 22px;
+    padding: 20px;
+    margin-bottom: 21px;
     background-color: #f2f2f2;
   }
 
@@ -53,18 +58,27 @@ $mobile-width-only: 767px;
     text-transform: uppercase;
     color: #111111;
     width: calc(100% - 70px);
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 12px;
+    padding-left: 1px;
   }
 
   &__desc {
     font-family: "Arial", sans-serif;
     width: 100%;
-    padding-bottom: 21px;
-    margin-top: 17px;
     border-bottom: 1px solid #d9d9d9;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
+
+    &--slim {
+      padding-bottom: 23px;
+      padding-top: 2px;
+    }
+
+    &--pro {
+      padding-bottom: 22px;
+      margin-top: 17px;
+    }
   }
 
   &__link {
@@ -73,6 +87,7 @@ $mobile-width-only: 767px;
     align-items: center;
     text-decoration: none;
     outline: none;
+    padding-top: 5px;
 
     &:active {
       opacity: 0.3;
@@ -86,9 +101,8 @@ $mobile-width-only: 767px;
     font-weight: 400;
     text-transform: uppercase;
     color: #111111;
-    width: auto;
-    padding-right: 10px;
-    margin: 0;
+    width: 97px;
+    margin: 0 0 0 -1px;
     background-color: #f2f2f2;
   }
 
@@ -112,6 +126,8 @@ $mobile-width-only: 767px;
 
 @media (min-width: $tablet-width) {
   .program {
+    margin-top: 26px;
+
     &__wrapper {
       position: relative;
     }
@@ -119,7 +135,7 @@ $mobile-width-only: 767px;
     &__illustration {
       position: absolute;
       top: 15px;
-      right: 0;
+      right: -4px;
       width: 200px;
       height: 200px;
       margin-left: auto;
@@ -136,8 +152,8 @@ $mobile-width-only: 767px;
 
       &--pro {
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 49%;
+        transform: translate(-50%, -48%);
         width: 268px;
         height: 112px;
       }
@@ -149,27 +165,40 @@ $mobile-width-only: 767px;
     }
 
     &__item {
-      padding: 77px 60px 62px 52px;
+      padding: 77px 65px 62px 52px;
       margin-top: 0;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
 
     &__title {
       font-size: 36px;
       line-height: 37px;
       margin-top: 0;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
       width: calc(100% - 223px);
     }
 
     &__desc {
       padding-bottom: 28px;
+      font-size: 16px;
+      line-height: 24px;
       border: 0;
-      width: calc(100% - 240px);
+      width: calc(100% - 208px);
+
+      &--slim {
+        padding-top: 2px;
+        padding-bottom: 29px;
+      }
+
+      &--pro {
+        padding-top: 2px;
+        padding-bottom: 30px;
+        width: calc(100% - 249px);
+      }
     }
 
     &__link {
-      padding-top: 13px;
+      padding-top: 10px;
       width: calc(100% - 230px);
     }
 
@@ -177,6 +206,7 @@ $mobile-width-only: 767px;
       font-size: 20px;
       line-height: 20px;
       padding-right: 25px;
+      width: auto;
     }
   }
 }
@@ -185,7 +215,8 @@ $mobile-width-only: 767px;
   .program {
     &__illustration {
       position: relative;
-      top: 0;
+      top: -2px;
+      right: 0;
       width: 100px;
       height: 100px;
       margin-left: 0;
@@ -229,18 +260,23 @@ $mobile-width-only: 767px;
     }
 
     &__title {
-      margin: 0 auto;
-      width: 210px;
+      margin: -7px auto 0;
+      width: 242px;
     }
 
     &__desc {
-      padding-top: 24px;
+      padding-top: 21px;
       padding-bottom: 0;
       width: 100%;
+
+      &--pro {
+        padding-top: 20px;
+      }
     }
 
     &__link {
-      padding-top: 13px;
+      padding-top: 16px;
+      padding-left: 1px;
       width: 100%;
       margin-top: auto;
     }

@@ -3,7 +3,6 @@ $desktop-width: 1300px;
 $mobile-width-only: 767px;
 
 .how-it-works {
-  padding-top: 18px;
   padding-bottom: 22px;
 
   &__title {
@@ -12,7 +11,7 @@ $mobile-width-only: 767px;
     font-weight: 400;
     color: #111111;
     margin-top: 0;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   &__list {
@@ -53,9 +52,9 @@ $mobile-width-only: 767px;
 
 @media (min-width: $tablet-width) {
   .how-it-works {
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 0;
-    margin-bottom: -14px;
+    margin-bottom: -10px;
 
     &__title {
       font-size: 60px;
@@ -76,20 +75,20 @@ $mobile-width-only: 767px;
     &__item {
       flex-wrap: wrap;
       align-items: flex-start;
-      max-width: calc(50% - 95px);
+      max-width: calc(50% - 105px);
       padding-bottom: 24px;
       background-repeat: no-repeat;
       position: relative;
-      margin-right: 95px;
+      margin-right: 75px;
       margin-top: 20px;
-      margin-bottom: 90px;
+      margin-bottom: 89px;
 
       &--food::before {
         content: "1";
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 22px;
+        right: 19px;
         top: -60px;
         z-index: -10;
       }
@@ -99,7 +98,7 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 0;
+        right: 2px;
         top: -60px;
         z-index: -10;
       }
@@ -109,7 +108,7 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 0;
+        right: 2px;
         top: -60px;
         z-index: -10;
       }
@@ -119,7 +118,7 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 0;
+        right: -2px;
         top: -60px;
         z-index: -10;
       }
@@ -144,14 +143,14 @@ $mobile-width-only: 767px;
   .how-it-works {
     padding-top: 18px;
     padding-bottom: 0;
-    margin-bottom: -14px;
+    margin-bottom: -16px;
 
     &__title {
       font-size: 60px;
       line-height: 60px;
       font-weight: 400;
       color: #111111;
-      margin-top: 0;
+      margin-top: 40px;
       margin-bottom: 52px;
     }
 
@@ -178,8 +177,8 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 22px;
-        top: -60px;
+        right: 16px;
+        top: -61px;
         z-index: -10;
       }
 
@@ -198,7 +197,7 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 0;
+        right: -3px;
         top: -60px;
         z-index: -10;
       }
@@ -208,7 +207,7 @@ $mobile-width-only: 767px;
         position: absolute;
         color: #f2f2f2;
         font-size: 281px;
-        right: 0;
+        right: -5px;
         top: -60px;
         z-index: -10;
       }
