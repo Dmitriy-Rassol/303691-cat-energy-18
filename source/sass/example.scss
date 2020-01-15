@@ -13,14 +13,15 @@ $mobile-width-only: 767px;
     font-weight: 400;
     color: #111111;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &__text {
     font-family: "Arial", sans-serif;
-    width: 95%;
+    font-size: 14px;
+    line-height: 18px;
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
   &__stats {
@@ -35,14 +36,14 @@ $mobile-width-only: 767px;
     &-item {
       position: relative;
       width: 124px;
-      padding-top: 16px;
+      padding-top: 13px;
       padding-bottom: 16px;
       border: 1px solid #cfcfcf;
-      border-radius: 5px;
+      border-radius: 3px;
       text-align: center;
 
       &--weight {
-        margin-right: 16px;
+        margin-right: 32px;
       }
 
       &--day {
@@ -65,7 +66,7 @@ $mobile-width-only: 767px;
       left: 0;
       right: 0;
       width: 86px;
-      bottom: -14px;
+      bottom: -17px;
       margin: 0 auto;
       padding-left: 2px;
       padding-right: 2px;
@@ -82,8 +83,8 @@ $mobile-width-only: 767px;
     text-transform: uppercase;
     color: #111111;
     text-align: center;
-    margin-top: 34px;
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   &__progress {
@@ -94,6 +95,7 @@ $mobile-width-only: 767px;
       display: flex;
       justify-content: space-between;
       width: 200%;
+      margin-left: -20px;
 
       &--after {
         transform: translateX(-50%);
@@ -130,8 +132,8 @@ $mobile-width-only: 767px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 219px;
-    margin: 28px auto 0;
+    width: 200px;
+    margin: 26px auto 0;
   }
 
   &__progress-button {
@@ -142,7 +144,7 @@ $mobile-width-only: 767px;
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px 0 3px;
+    padding: 3px 0 3px;
     min-width: 40px;
     cursor: pointer;
     outline: none;
@@ -191,7 +193,7 @@ $mobile-width-only: 767px;
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
-    padding-top: 46px;
+    padding-top: 42px;
     padding-bottom: 58px;
     background-color: transparent;
     border-top: 1px solid #cdcdcd;
@@ -203,8 +205,10 @@ $mobile-width-only: 767px;
     }
 
     &__text {
+      font-size: 16px;
       line-height: 24px;
-      margin-bottom: 54px;
+      margin-bottom: 26px;
+      width: calc(100% - 20px);
     }
 
     &__stats {
@@ -220,15 +224,16 @@ $mobile-width-only: 767px;
 
       &-item {
         position: relative;
+        display: flex;
+        align-items: center;
+        height: 72px;
+        justify-content: center;
         width: 162px;
-        padding-top: 23px;
-        padding-bottom: 25px;
         border: 1px solid #cfcfcf;
         border-radius: 5px;
-        text-align: center;
 
         &--weight {
-          margin-right: 16px;
+          margin-right: 42px;
         }
 
         &--day {
@@ -268,19 +273,20 @@ $mobile-width-only: 767px;
 
     &__caption {
       font-size: 20px;
-      line-height: 32px;
+      line-height: 30px;
       width: 190px;
       text-align: right;
     }
 
     &__progress {
-      margin-top: 50px;
+      margin-top: 58px;
+      margin-bottom: 7px;
       overflow: hidden;
 
       &-wrapper {
         width: 690px;
         height: 517px;
-        margin: 0 auto 19px;
+        margin: 0 auto;
 
         &--after {
           transform: translateX(0);
@@ -307,26 +313,27 @@ $mobile-width-only: 767px;
       }
 
       &--size-before {
-        width: 640px;
-        height: 480px;
+        width: 690px;
+        height: 517px;
         position: absolute;
         top: 0;
         left: 0;
+        transform: translateX(7px);
       }
 
       &--size-after {
-        width: 640px;
-        height: 480px;
+        width: 690px;
+        height: 517px;
         position: absolute;
         top: 0;
         right: 0;
-        transform: translateX(-4%);
+        transform: translateX(8px);
       }
     }
 
     &__buttons-block {
       width: 570px;
-      margin: 13px auto 0;
+      margin: 10px auto 0;
     }
 
     &__progress-button {
@@ -351,11 +358,11 @@ $mobile-width-only: 767px;
     }
 
     &__progress-bar {
-      width: 427px;
+      width: 437px;
       height: 40px;
       border: 0;
       background-color: transparent;
-      transform: translate(4px, 11px);
+      transform: translate(0, 14px);
     }
 
     &__range {
@@ -364,7 +371,7 @@ $mobile-width-only: 767px;
       width: 100%;
       height: 6px;
       background-color: #dcdcdc;
-      border-radius: 5%;
+      border-radius: 5px;
       outline: 0;
       cursor: pointer;
       position: relative;
@@ -439,17 +446,18 @@ $mobile-width-only: 767px;
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 662px;
+      height: 650px;
     }
 
     &__title {
       padding-top: 54px;
-      padding-bottom: 46px;
+      padding-bottom: 45px;
       width: 435px;
     }
 
     &__text {
-      padding-top: 77px;
+      padding-top: 78px;
+      padding-bottom: 25px;
       width: 435px;
     }
 
@@ -463,7 +471,7 @@ $mobile-width-only: 767px;
         align-items: center;
         list-style: none;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 21px;
       }
 
       &-item {
@@ -476,7 +484,7 @@ $mobile-width-only: 767px;
         text-align: center;
 
         &--weight {
-          margin-right: 16px;
+          margin-right: 43px;
         }
 
         &--day {
@@ -486,7 +494,7 @@ $mobile-width-only: 767px;
 
       &-item--weight &-subtitle {
         width: 120px;
-        bottom: -8px;
+        bottom: -7px;
         padding-left: 6px;
         padding-right: 6px;
         font-size: 14px;
@@ -496,7 +504,7 @@ $mobile-width-only: 767px;
 
       &-item--days &-subtitle {
         width: 139px;
-        bottom: -8px;
+        bottom: -7px;
         padding-left: 6px;
         padding-right: 6px;
         font-size: 14px;
@@ -517,7 +525,7 @@ $mobile-width-only: 767px;
     &__caption {
       display: flex;
       justify-content: space-between;
-      width: 325px;
+      width: 327px;
       text-align: left;
     }
 
@@ -529,7 +537,8 @@ $mobile-width-only: 767px;
       &-wrapper {
         width: 690px;
         height: 517px;
-        margin: 0 auto 19px;
+        margin: 0 auto 31px;
+        padding-right: 40px;
         transition: 0.5s;
 
         &--after {
@@ -558,20 +567,21 @@ $mobile-width-only: 767px;
       }
 
       &--size-before {
-        width: 640px;
-        height: 480px;
+        width: 690px;
+        height: 517px;
         position: absolute;
         top: 0;
         left: 0;
+        transform: translate(-40px);
       }
 
       &--size-after {
-        width: 640px;
-        height: 480px;
+        width: 690px;
+        height: 517px;
         position: absolute;
         top: 0;
         right: 0;
-        transform: translateX(-4%);
+        transform: translateX(0);
       }
     }
 
@@ -672,7 +682,7 @@ $mobile-width-only: 767px;
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 462px;
+      height: 461px;
       background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - (50% - 325px)), #e9e9e9 calc(100% - (50% - 325px)), #e9e9e9 100%);
     }
   }
