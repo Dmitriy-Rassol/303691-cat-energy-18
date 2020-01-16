@@ -757,10 +757,10 @@ $mobile-width-only: 767px;
     }
 
     &__head::before {
-      width: 125%;
+      width: 150vw;
       height: 3px;
       top: 109px;
-      right: -150px;
+      right: -50vw;
     }
 
     &__title {

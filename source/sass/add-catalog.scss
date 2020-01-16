@@ -224,9 +224,9 @@ $retina-dpi: 144dpi;
     }
 
     &__wrapper::before {
-      width: 112%;
+      width: 150vw;
       top: 22px;
-      right: -74px;
+      right: -50vw;
     }
 
     &__inner {
