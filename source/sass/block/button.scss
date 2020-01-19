@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  background-color: $green;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $green-dark;
+  }
+
+  &:active {
+    background-color: $green-dark;
+    color: $white;
+    opacity: 0.3;
+  }
+
+  &--gray {
+    color: $grey-dark;
+    background-color: $grey4;
+
+    &:hover,
+    &:focus {
+      background-color: $grey7;
+      color: $grey-dark;
+    }
+
+    &:active {
+      background-color: $grey7;
+      color: $grey-dark;
+      opacity: 0.3;
+    }
+  }
+}
