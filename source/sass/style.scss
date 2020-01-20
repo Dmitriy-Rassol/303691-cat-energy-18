@@ -1,106 +1,21 @@
-@import "header", "page-footer.scss", "add-catalog.scss", "catalog.scss", "cooperation.scss", "example.scss", "head-info.scss", "how-it-works.scss", "main-nav.scss", "program.scss", "selection.scss";
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-
-@font-face {
-  font-weight: normal;
-  font-family: "Oswald";
-  font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-}
-
-$tablet-width: 768px;
-$desktop-width: 1300px;
-$mobile-width-only: 767px;
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-$oswald-font:"Oswald", sans-serif;
-
-body {
-  background: #ffffff;
-  font-family: $oswald-font;
-  overflow-x: hidden;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.button {
-  display: block;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  background-color: #68b738;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:focus {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.31);
-  }
-
-  &--gray {
-    color: #444444;
-    background-color: #f2f2f2;
-
-    &:hover {
-      background-color: #ebebeb;
-      color: #444444;
-    }
-
-    &:focus {
-      background-color: #ebebeb;
-      color: #444444;
-    }
-
-    &:active {
-      background-color: #ebebeb;
-      color: rgba(68, 68, 68, 0.3);
-    }
-  }
-}
+@import "variables.scss";
+@import "global/fonts.scss";
+@import "global/pages.scss";
+@import "block/add-catalog.scss";
+@import "block/add-list.scss";
+@import "block/add-product.scss";
+@import "block/button.scss";
+@import "block/catalog.scss";
+@import "block/container.scss";
+@import "block/cooperation.scss";
+@import "block/example.scss";
+@import "block/fields.scss";
+@import "block/head-info.scss";
+@import "block/header.scss";
+@import "block/how-it-works.scss";
+@import "block/main-nav.scss";
+@import "block/page-footer.scss";
+@import "block/program.scss";
+@import "block/product.scss";
+@import "block/program-type-list.scss";
+@import "block/selection.scss";
