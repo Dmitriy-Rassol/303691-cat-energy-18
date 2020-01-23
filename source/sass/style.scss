@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/pages.scss";
 @import "block/add-catalog.scss";
@@ -9,6 +9,7 @@
 @import "block/container.scss";
 @import "block/cooperation.scss";
 @import "block/example.scss";
+@import "block/progress-bar.scss";
 @import "block/fields.scss";
 @import "block/head-info.scss";
 @import "block/header.scss";
