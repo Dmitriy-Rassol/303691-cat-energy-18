@@ -20,4 +20,3 @@ navToggle.addEventListener('click', function() {
     close.style.display = 'none';
   }
 });
-
