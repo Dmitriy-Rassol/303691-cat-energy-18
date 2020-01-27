@@ -1,10 +1,10 @@
 .fields {
-  padding-top: 11px;
-  padding-bottom: 31px;
+  padding-top: 40px;
+  padding-bottom: 33px;
 
   &__set {
     &--personal {
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
     &--program {
@@ -25,41 +25,59 @@
 
     &--add {
       margin-top: -2px;
-      padding-bottom: 24px;
+      padding-bottom: 21px;
     }
   }
 
-  &__head {
+  &__title {
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  &__head::before {
-    content: "";
-    z-index: -1;
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    top: 42px;
-    right: -20px;
-    background-color: $green;
-  }
-
-  &__title {
-    display: inline-block;
-    vertical-align: baseline;
     font-size: 24px;
     line-height: 24px;
     font-weight: 300;
     color: $black1;
-    max-width: 205px;
-    padding-right: 21px;
-    padding-top: 9px;
     margin: 0;
     background-color: $white;
+  }
+
+  &__title::before {
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 3px;
+    position: absolute;
+    background-color: $green;
+  }
+
+  &__title-contact {
+    width: 200px;
+    padding-top: 29px;
+    padding-bottom: 20px;
+  }
+
+  &__title-contact::before {
+    top: 43px;
+  }
+
+  &__title-comment {
+    width: 142px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+
+  &__title-comment::before {
+    top: 41px;
+  }
+
+  &__title-add {
+    width: 164px;
+    padding-top: 29px;
+    padding-bottom: 20px;
+  }
+
+  &__title-add::before {
+    top: 41px;
   }
 
   &__block {
@@ -87,6 +105,10 @@
 
     &::placeholder {
       color: $grey-dark;
+    }
+
+    &::-moz-placeholder {
+      color: $black;
     }
 
     &:hover {
@@ -123,6 +145,10 @@
       color: $grey-dark;
     }
 
+    &::-moz-placeholder {
+      color: $black;
+    }
+
     &:hover {
       border: 1px solid $grey;
     }
@@ -143,7 +169,7 @@
 
     &--mail {
       right: 16px;
-      top: 14px;
+      top: 15px;
     }
 
     &--phone {
@@ -180,9 +206,7 @@
 
 @media (min-width: $tablet-width) {
   .fields {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    margin: 25px 40px 39px;
 
     &__wrapper {
       font-size: 20px;
@@ -208,30 +232,66 @@
         margin-top: -13px;
         padding-bottom: 24px;
       }
-    }
 
-    &__head {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding-top: 66px;
-      padding-bottom: 62px;
-    }
-
-    &__head::before {
-      width: 150%;
-      height: 3px;
-      top: 98px;
-      right: -70px;
+      &--description {
+        padding-top: 0;
+      }
     }
 
     &__title {
+      position: relative;
+      display: flex;
+      align-items: center;
       font-size: 36px;
       line-height: 36px;
-      max-width: 100%;
-      padding-right: 40px;
-      padding-left: 40px;
+      padding: 66px 40px 62px;
       margin: 0 40px 0 -40px;
+    }
+
+    &__title::before {
+      width: 130%;
+      height: 3px;
+      position: absolute;
+      background-color: $green;
+    }
+
+    &__title-contact {
+      width: 592px;
+      margin-top: 0;
+      padding-top: 74px;
+      padding-bottom: 63px;
+    }
+
+    &__title-contact::before {
+      width: 768px;
+      top: 96px;
+      left: -30px;
+    }
+
+    &__title-comment {
+      width: 258px;
+      margin-top: 0;
+      padding-top: 75px;
+      padding-bottom: 60px;
+    }
+
+    &__title-comment::before {
+      width: 768px;
+      top: 96px;
+      left: -30px;
+    }
+
+    &__title-add {
+      width: 292px;
+      margin-top: 10px;
+      padding-top: 65px;
+      padding-bottom: 61px;
+    }
+
+    &__title-add::before {
+      width: 768px;
+      top: 87px;
+      left: -30px;
     }
 
     &__block {
@@ -248,6 +308,7 @@
     &__label {
       font-size: 20px;
       line-height: 20px;
+      padding-bottom: 10px;
     }
 
     &__text-field {
@@ -258,6 +319,10 @@
 
       &::placeholder {
         color: $grey-dark;
+      }
+
+      &::-moz-placeholder {
+        color: $black;
       }
 
       &:hover {
@@ -294,6 +359,10 @@
 
       &::placeholder {
         color: $grey-dark;
+      }
+
+      &::-moz-placeholder {
+        color: $black;
       }
 
       &:hover {
@@ -352,9 +421,7 @@
 
 @media (min-width: $desktop-width) {
   .fields {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 50px;
+    margin: 26px 0 50px;
 
     &__wrapper {
       display: flex;
@@ -366,6 +433,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
       margin-top: 11px;
     }
 
@@ -383,45 +451,75 @@
       }
 
       &--contacts {
-        padding-top: 7px;
-        margin-top: -30px;
         width: 100%;
       }
 
       &--add {
-        margin-top: -24px;
         padding-bottom: 30px;
         width: 100%;
       }
 
       &--description {
         width: 100%;
-        margin-top: -40px;
       }
     }
 
-    &__head {
+    &__title {
       position: relative;
       display: flex;
       align-items: center;
-      padding-top: 78px;
-      padding-bottom: 64px;
-    }
-
-    &__head::before {
-      width: 150vw;
-      height: 3px;
-      top: 109px;
-      right: -50vw;
-    }
-
-    &__title {
       font-size: 36px;
       line-height: 36px;
       max-width: 100%;
       padding-right: 40px;
       padding-left: 40px;
       margin: 0 40px 0 -40px;
+    }
+
+    &__title::before {
+      width: 130%;
+      height: 3px;
+      position: absolute;
+      background-color: $green;
+    }
+
+    &__title-contact {
+      width: 592px;
+      margin-top: 0;
+      padding-top: 65px;
+      padding-bottom: 63px;
+    }
+
+    &__title-contact::before {
+      width: 100vw;
+      top: 86px;
+      left: -70px;
+    }
+
+    &__title-comment {
+      width: 258px;
+      margin-top: 0;
+      padding-top: 61px;
+      padding-bottom: 62px;
+    }
+
+    &__title-comment::before {
+      width: 100vw;
+      top: 83px;
+      left: -70px;
+    }
+
+    &__title-add {
+      width: 292px;
+      margin-top: 10px;
+      padding-top: 67px;
+      padding-bottom: 65px;
+    }
+
+    &__title-add::before {
+      width: 100vw;
+      top: 90px;
+      left: -70px;
     }
 
     &__block {
@@ -445,9 +543,14 @@
       padding: 14px 18px;
       margin-left: 17px;
       margin-bottom: 5px;
+      color: $grey-dark;
 
       &::placeholder {
         color: $grey-dark;
+      }
+
+      &::-moz-placeholder {
+        color: $black;
       }
 
       &:hover {
@@ -479,6 +582,10 @@
 
       &::placeholder {
         color: $grey-dark;
+      }
+
+      &::-moz-placeholder {
+        color: $black;
       }
 
       &:hover {

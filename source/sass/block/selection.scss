@@ -1,20 +1,18 @@
 .selection {
   border-top: 1px solid $grey5;
-  margin-top: 20px;
 
   &__heading {
-    padding-top: 16px;
-    padding-bottom: 29px;
-
-    &--title {
+    &-title {
       font-size: 36px;
       line-height: 60px;
       font-weight: 300;
       color: $black1;
+      padding-top: 15px;
+      padding-bottom: 1px;
       margin: 0;
     }
 
-    &--text {
+    &-text {
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
@@ -31,20 +29,18 @@
     border-top: none;
 
     &__heading {
-      padding-top: 38px;
-      padding-bottom: 55px;
-
-      &--title {
+      &-title {
         font-size: 60px;
+        padding-top: 48px;
+        padding-bottom: 55px;
       }
 
-      &--text {
+      &-text {
         text-transform: uppercase;
         color: $black1;
         width: 330px;
-        margin-top: 56px;
+        margin-top: 0;
         margin-left: 40px;
-        margin-bottom: 0;
         font-size: 20px;
         line-height: 30px;
       }
@@ -57,14 +53,13 @@
     border-top: none;
 
     &__heading {
-      padding-top: 56px;
-      padding-bottom: 54px;
-
-      &--title {
+      &-title {
         font-size: 60px;
+        padding-top: 66px;
+        padding-bottom: 0;
       }
 
-      &--text {
+      &-text {
         text-transform: uppercase;
         color: $black1;
         width: 330px;

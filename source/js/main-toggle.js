@@ -3,6 +3,10 @@ var navToggle = document.querySelector('.page-header__main-toggle');
 var open = document.querySelector('.main-toggle-icon--open');
 var close = document.querySelector('.main-toggle-icon--close');
 
+
+  navMain.classList.add('main-nav--closed');
+  open.style.display = 'block';
+
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
@@ -16,3 +20,4 @@ navToggle.addEventListener('click', function() {
     close.style.display = 'none';
   }
 });
+

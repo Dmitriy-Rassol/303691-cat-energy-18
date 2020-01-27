@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese");
 
 @font-face {
-  font-family: "Oswald";
-  src: local("Oswald"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
+  font-family: "Oswald Regular", sans-serif;
+  src: url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Oswald Medium";
-  src: local("Oswald Medium"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-family: "Oswald Medium", sans-serif;
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

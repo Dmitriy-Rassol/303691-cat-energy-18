@@ -1,10 +1,9 @@
 .catalog {
   border-top: 1px solid $grey2;
   border-bottom: 1px solid $grey2;
-  margin-top: 18px;
 
   &__title {
-    padding: 16px 20px 27px;
+    padding: 14px 20px 27px;
     font-size: 36px;
     font-weight: 300;
     line-height: 60px;
@@ -30,6 +29,7 @@
     &-title {
       font-size: 16px;
       line-height: 20px;
+      font-weight: 300;
       text-transform: uppercase;
       color: $black1;
       margin-top: 24px;
@@ -72,7 +72,7 @@
     }
 
     &__title {
-      padding: 57px 30px 0;
+      padding: 48px 30px 0;
       font-size: 60px;
       line-height: 60px;
       border: none;
@@ -95,7 +95,7 @@
       flex-direction: column;
       align-items: center;
       padding: 45px 36px 30px;
-      margin-top: 140px;
+      margin-top: 138px;
       border: 1px solid $grey5;
       width: calc(50% - 30px);
       margin-bottom: 0;
@@ -137,12 +137,12 @@
 
     &__wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap;
     }
 
     &__title {
-      padding: 75px 40px 25px;
+      padding: 66px 40px 26px;
       font-size: 60px;
       line-height: 60px;
       border: none;

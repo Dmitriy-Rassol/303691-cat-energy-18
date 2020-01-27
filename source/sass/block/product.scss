@@ -63,7 +63,7 @@
     padding-right: 37px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 140px;
+    margin-top: 138px;
     background: $grey4;
     height: auto;
 
@@ -80,12 +80,12 @@
       width: 100%;
       height: 128px;
 
-      &--small {
+      &-small {
         width: 324px;
         height: auto;
       }
 
-      &--big {
+      &-big {
         width: 324px;
         height: auto;
       }
@@ -128,6 +128,7 @@
     padding-left: 38px;
     padding-right: 38px;
     margin-left: 0;
+    margin-right: 80px;
     background: $grey4;
 
     &__wrapper {
@@ -143,12 +144,12 @@
       width: 100%;
       height: 129px;
 
-      &--small {
+      &-small {
         width: 245px;
         height: auto;
       }
 
-      &--big {
+      &-big {
         width: 245px;
         height: auto;
       }
@@ -180,6 +181,10 @@
     &__button {
       padding-top: 10px;
       padding-bottom: 12px;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
     }
   }
 }

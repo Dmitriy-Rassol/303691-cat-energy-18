@@ -22,7 +22,7 @@
     align-items: center;
     margin-bottom: 20px;
 
-    &--image-block {
+    &-image-block {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,17 +31,16 @@
       background: $green;
     }
 
-    &__image {
-      width: 50px;
-      height: 50px;
-    }
-
-    &--text {
+    &-text {
       font-family: $arial-font;
       width: calc(100% - 80px);
       margin: 0;
       font-size: 14px;
       line-height: 18px;
+    }
+
+    &-text br {
+      display: none;
     }
   }
 }
@@ -118,17 +117,21 @@
         z-index: -10;
       }
 
-      &--image-block {
+      &-image-block {
         width: 80px;
         height: 80px;
         margin-bottom: 32px;
         margin-right: calc(100% - 80px);
       }
 
-      &--text {
+      &-text {
         width: 250px;
         font-size: 16px;
         line-height: 24px;
+      }
+
+      &-text br {
+        display: block;
       }
     }
   }
@@ -206,14 +209,14 @@
         z-index: -10;
       }
 
-      &--image-block {
+      &-image-block {
         width: 80px;
         height: 80px;
         margin-bottom: 32px;
         margin-right: calc(100% - 80px);
       }
 
-      &--text {
+      &-text {
         width: 250px;
         font-size: 16px;
         line-height: 24px;

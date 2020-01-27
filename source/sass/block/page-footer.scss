@@ -1,6 +1,6 @@
 .page-footer {
   background: $grey4;
-  padding: 38px 0 22px;
+  padding: 37px 0 22px;
 
   &__wrapper {
     display: flex;
@@ -29,7 +29,7 @@
     list-style: none;
     justify-content: center;
     padding-top: 24px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
   }
@@ -43,12 +43,16 @@
     outline: none;
   }
 
+  &__academy-link:active {
+    opacity: 0.3;
+  }
+
   &__academy-text {
+    font-family: $arial-font;
     font-size: 16px;
     line-height: 16px;
     color: $icon;
     font-weight: 300;
-    font-family: $arial-font;
   }
 
   &__academy-icon {
@@ -83,6 +87,18 @@
   &__link:active {
     fill: $green;
     opacity: 0.3;
+  }
+
+  &__icon--vk {
+    transform: translate(-4px, -4px);
+  }
+
+  &__icon--fb {
+    transform: translate(0, -2px);
+  }
+
+  &__icon--inst {
+    transform: translate(-1px, -1px);
   }
 }
 
@@ -131,7 +147,7 @@
 
     &__academy-block {
       width: 23%;
-      margin-top: -3px;
+      margin-top: -4px;
     }
 
     &__academy-link {
@@ -174,16 +190,19 @@
       &--vk {
         width: 30px;
         height: 16px;
+        transform: translate(0, -1px);
       }
 
       &--inst {
         width: 23px;
         height: 23px;
+        transform: translate(2px, -1px);
       }
 
       &--fb {
         width: 14px;
         height: 28px;
+        transform: translate(0, -1px);
       }
     }
 

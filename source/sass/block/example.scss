@@ -15,9 +15,10 @@
   &__text {
     font-family: $arial-font;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
     margin-top: 0;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
+    margin-right: 2px;
   }
 
   &__stats {
@@ -33,7 +34,7 @@
       position: relative;
       width: 124px;
       padding-top: 13px;
-      padding-bottom: 16px;
+      padding-bottom: 15px;
       border: 1px solid $grey8;
       border-radius: 3px;
       text-align: center;
@@ -80,7 +81,7 @@
     color: $black1;
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 }
 
@@ -101,7 +102,7 @@
     &__text {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 25px;
       width: calc(100% - 20px);
     }
 
@@ -171,14 +172,14 @@
       text-align: right;
     }
 
-    &__inner {
+    &_inner {
       position: absolute;
       z-index: -1;
       left: 0;
       bottom: 0;
       width: 100%;
       height: 462px;
-      background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #e9e9e9 50%, #e9e9e9 100%);
+      background: $grey4;
     }
   }
 }
@@ -277,14 +278,14 @@
       text-align: left;
     }
 
-    &__inner {
+    &_inner {
       position: absolute;
       z-index: -1;
       left: 0;
       bottom: 0;
       width: 100%;
       height: 461px;
-      background-image: linear-gradient(to right, $grey4 0, $grey4 calc(100% - (50% - 325px)), $grey11 calc(100% - (50% - 325px)), $grey11 100%);
+      background: $grey4;
     }
   }
 }

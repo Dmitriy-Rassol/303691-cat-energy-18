@@ -4,7 +4,7 @@
   margin: 14px 0 0;
 
   &__item {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 
   &__input {
@@ -160,11 +160,18 @@
     list-style: none;
     margin: -7px 0 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     &__item {
       margin-bottom: 34px;
+      margin-right: 79px;
+      width: 245px;
+    }
+
+    &__item:nth-of-type(4) {
+      margin-bottom: 34px;
+      margin-right: 0;
       width: 245px;
     }
 
@@ -190,7 +197,7 @@
       color: $black1;
       padding-left: 59px;
       padding-top: 10px;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
       cursor: pointer;
       outline: none;
 
