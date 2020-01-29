@@ -30,10 +30,10 @@
     padding-bottom: 6px;
     cursor: pointer;
     outline: none;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &__label:active {
+    opacity: 0.3;
   }
 
   &__label::before {
@@ -113,10 +113,6 @@
       padding-bottom: 6px;
       cursor: pointer;
       outline: none;
-
-      &:active {
-        opacity: 0.3;
-      }
     }
 
     &__label::before {
@@ -200,10 +196,6 @@
       padding-bottom: 8px;
       cursor: pointer;
       outline: none;
-
-      &:active {
-        opacity: 0.3;
-      }
     }
 
     &__label::before {

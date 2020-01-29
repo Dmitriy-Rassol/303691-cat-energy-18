@@ -76,13 +76,14 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/logo-*.svg")
+  return gulp.src("source/img/{logo-*,icon-*}.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
+
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -137,8 +138,8 @@ gulp.task("refresh", function (done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
   "normalize",
+  "css",
   "js",
   "sprite",
   "minify-html"

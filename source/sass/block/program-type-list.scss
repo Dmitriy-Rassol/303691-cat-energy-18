@@ -1,7 +1,9 @@
-.program-type-list {
-  padding: 0;
-  list-style: none;
-  margin: 20px 0 22px;
+.program-type {
+  &__list {
+    padding: 0;
+    list-style: none;
+    margin: 20px 0 22px;
+  }
 
   &__item {
     margin-bottom: 12px;
@@ -28,10 +30,10 @@
     padding-bottom: 6px;
     cursor: pointer;
     outline: none;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &__label:active {
+    opacity: 0.3;
   }
 
   &__label::before {
@@ -68,8 +70,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-type-list {
-    margin: 30px 0 30px;
+  .program-type {
+    &__list {
+      margin: 30px 0 30px;
+    }
 
     &__item {
       margin-bottom: 20px;
@@ -88,10 +92,6 @@
       padding-bottom: 6px;
       cursor: pointer;
       outline: none;
-
-      &:active {
-        opacity: 0.3;
-      }
     }
 
     &__label::before {
@@ -115,8 +115,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .program-type-list {
-    margin: 30px 0 30px;
+  .program-type {
+    &__list {
+      margin: 30px 0 30px;
+    }
 
     &__item {
       margin-bottom: 20px;
@@ -135,10 +137,6 @@
       padding-bottom: 6px;
       cursor: pointer;
       outline: none;
-
-      &:active {
-        opacity: 0.3;
-      }
     }
 
     &__label::before {

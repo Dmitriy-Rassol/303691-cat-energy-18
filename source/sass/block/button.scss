@@ -8,31 +8,31 @@
   border: 0;
   outline: 0;
   cursor: pointer;
+}
 
-  &:hover,
-  &:focus {
-    background-color: $green-dark;
-  }
+.button:hover,
+.button:focus {
+  background-color: $green-dark;
+}
 
-  &:active {
-    background-color: $green-dark;
-    color: $button-active;
-  }
+.button:active {
+  background-color: $green-dark;
+  color: $button-active;
+}
 
-  &--gray {
-    color: $grey-dark;
-    background-color: $grey4;
+.button--gray {
+  color: $grey-dark;
+  background-color: $grey4;
+}
 
-    &:hover,
-    &:focus {
-      background-color: $grey7;
-      color: $grey-dark;
-    }
+.button--gray:hover,
+.button--gray:focus {
+  background-color: $grey7;
+  color: $grey-dark;
+}
 
-    &:active {
-      background-color: $grey7;
-      color: $grey-dark;
-      opacity: 0.3;
-    }
-  }
+.button--gray:active {
+  background-color: $grey7;
+  color: $grey-dark;
+  opacity: 0.3;
 }

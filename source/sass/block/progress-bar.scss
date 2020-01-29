@@ -1,6 +1,6 @@
 .example {
-  &_progress {
-    margin-bottom: 3px;
+  &__progress {
+    margin-bottom: 4px;
     overflow: hidden;
 
     &-wrapper {
@@ -11,12 +11,12 @@
       transition: 0.5s;
 
       &--after {
-        transform: translateX(-50%);
+        transform: translateX(-55%);
       }
     }
   }
 
-  &-image {
+  &__illustration {
     display: flex;
     justify-content: center;
 
@@ -27,21 +27,21 @@
     &--after {
       width: 100%;
     }
-
-    &_before-size {
-      width: 320px;
-      height: 240px;
-      position: relative;
-    }
-
-    &_after-size {
-      width: 320px;
-      height: 240px;
-      position: relative;
-    }
   }
 
-  &_buttons-block {
+  &__image-before {
+    width: 320px;
+    height: 240px;
+    position: relative;
+  }
+
+  &__image-after {
+    width: 320px;
+    height: 240px;
+    position: relative;
+  }
+
+  &__state {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
     margin: 26px auto 0;
   }
 
-  &_progress-button {
+  &__state-button {
     position: relative;
     border: 0;
     background-color: transparent;
@@ -62,21 +62,21 @@
     cursor: pointer;
     outline: none;
     border-bottom: 1px dotted $grey9;
-
-    &:hover {
-      border-bottom: 1px solid $grey9;
-    }
-
-    &:active {
-      border-bottom: none;
-    }
-
-    &:focus {
-      border-bottom: none;
-    }
   }
 
-  &_progress-bar {
+  &__state-button:hover {
+    border-bottom: 1px solid $grey9;
+  }
+
+  &__state-button:active {
+    border-bottom: none;
+  }
+
+  &__state-button:focus {
+    border-bottom: none;
+  }
+
+  &__state-bar {
     width: 84px;
     height: 14px;
     padding: 3px 5px;
@@ -85,11 +85,11 @@
     background-color: $white;
   }
 
-  &_range {
+  &__state-range {
     display: none;
   }
 
-  &_progress-toggle {
+  &__state-toggle {
     width: 50%;
     height: 6px;
     border-radius: 10px;
@@ -106,7 +106,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    &_progress {
+    &__progress {
       margin-top: 58px;
       margin-bottom: 7px;
       overflow: hidden;
@@ -122,7 +122,7 @@
       }
     }
 
-    &-image {
+    &__illustration {
       justify-content: center;
       overflow: hidden;
       position: relative;
@@ -138,53 +138,41 @@
         height: 100%;
         z-index: 10;
       }
-
-      &_before-size {
-        width: 690px;
-        height: 517px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(7px);
-      }
-
-      &_after-size {
-        width: 690px;
-        height: 517px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(8px);
-      }
     }
 
-    &_buttons-block {
+    &__image-before {
+      width: 690px;
+      height: 517px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(7px);
+    }
+
+    &__image-after {
+      width: 690px;
+      height: 517px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(8px);
+    }
+
+    &__state {
       width: 570px;
       margin: 10px auto 0;
     }
 
-    &_progress-button {
+    &__state-button {
       font-size: 20px;
       line-height: 20px;
       width: auto;
       padding: 7px 0;
       border-bottom: 1px dotted $grey9;
       outline: 0;
-
-      &:hover {
-        border-bottom: 1px solid $grey9;
-      }
-
-      &:active {
-        border-bottom: none;
-      }
-
-      &:focus {
-        border-bottom: none;
-      }
     }
 
-    &_progress-bar {
+    &__state-bar {
       width: 437px;
       height: 40px;
       border: 0;
@@ -192,7 +180,7 @@
       transform: translate(0, 14px);
     }
 
-    &_range {
+    &__state-range {
       display: block;
       appearance: none;
       width: 100%;
@@ -286,7 +274,7 @@
       }
     }
 
-    &_progress-toggle {
+    &__state-toggle {
       display: none;
     }
   }
@@ -295,7 +283,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    &_progress {
+    &__progress {
       width: 609px;
       margin-left: auto;
       margin-top: 0;
@@ -314,7 +302,7 @@
       }
     }
 
-    &-image {
+    &__illustration {
       display: flex;
       justify-content: center;
       overflow: hidden;
@@ -331,53 +319,41 @@
         height: 100%;
         z-index: 10;
       }
-
-      &_before-size {
-        width: 690px;
-        height: 517px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(-40px);
-      }
-
-      &_after-size {
-        width: 690px;
-        height: 517px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(0);
-      }
     }
 
-    &_buttons-block {
+    &__image-before {
+      width: 690px;
+      height: 517px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-40px);
+    }
+
+    &__image-after {
+      width: 690px;
+      height: 517px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(0);
+    }
+
+    &__state {
       width: 570px;
       margin: 13px 0 13px auto;
     }
 
-    &_progress-button {
+    &__state-button {
       font-size: 20px;
       line-height: 20px;
       width: auto;
       padding: 7px 0;
       border-bottom: 1px dotted $grey9;
       outline: 0;
-
-      &:hover {
-        border-bottom: 1px solid $grey9;
-      }
-
-      &:active {
-        border-bottom: none;
-      }
-
-      &:focus {
-        border-bottom: none;
-      }
     }
 
-    &_progress-bar {
+    &__state-bar {
       width: 427px;
       height: 30px;
       border: 0;
@@ -385,7 +361,7 @@
       transform: translate(4px, 11px);
     }
 
-    &_range {
+    &__state-range {
       display: block;
       appearance: none;
       width: 100%;
@@ -443,7 +419,7 @@
       }
     }
 
-    &_progress-toggle {
+    &__state-toggle {
       display: none;
     }
   }

@@ -84,10 +84,10 @@
     text-decoration: none;
     outline: none;
     padding-top: 5px;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &__link:active {
+    opacity: 0.3;
   }
 
   &__catalog {

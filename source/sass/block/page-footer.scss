@@ -1,25 +1,25 @@
 .page-footer {
   background: $grey4;
-  padding: 37px 0 22px;
+  padding: 36px 0 23px;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
   }
 
-  &__logo {
+  &__logo-link {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
     outline: none;
   }
 
-  &__logo:hover,
-  &__logo:focus {
+  &__logo-link:hover,
+  &__logo-link:focus {
     opacity: 0.8;
   }
 
-  &__logo:active {
+  &__logo-link:active {
     opacity: 0.6;
   }
 
@@ -113,7 +113,7 @@
       flex-direction: row;
     }
 
-    &__logo {
+    &__logo-link {
       display: flex;
       justify-content: flex-start;
       padding-top: 0;
@@ -123,12 +123,12 @@
       width: 22.5%;
     }
 
-    &__logo:hover,
-    &__logo:focus {
+    &__logo-link:hover,
+    &__logo-link:focus {
       opacity: 0.8;
     }
 
-    &__logo:active {
+    &__logo-link:active {
       opacity: 0.6;
     }
 
@@ -145,7 +145,7 @@
       padding-left: 30px;
     }
 
-    &__academy-block {
+    &__academy {
       width: 23%;
       margin-top: -4px;
     }
@@ -228,11 +228,11 @@
     padding-top: 56px;
     padding-bottom: 56px;
 
-    &__logo {
+    &__logo-link {
       margin-top: 10px;
     }
 
-    &__academy-block {
+    &__academy {
       width: 23%;
       padding-left: 118px;
       margin-top: 0;

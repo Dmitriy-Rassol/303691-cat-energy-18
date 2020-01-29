@@ -21,57 +21,55 @@
     margin-right: 2px;
   }
 
-  &__stats {
-    &-list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-      padding: 0;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+    width: 124px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    border: 1px solid $grey8;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 300;
+
+    &--weight {
+      margin-right: 32px;
     }
 
-    &-item {
-      position: relative;
-      width: 124px;
-      padding-top: 13px;
-      padding-bottom: 15px;
-      border: 1px solid $grey8;
-      border-radius: 3px;
-      text-align: center;
-      font-weight: 300;
-
-      &--weight {
-        margin-right: 32px;
-      }
-
-      &--day {
-        margin-left: 16px;
-      }
+    &--day {
+      margin-left: 16px;
     }
+  }
 
-    &-value {
-      position: relative;
-      font-size: 24px;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: $black1;
-    }
+  &__value {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $black1;
+  }
 
-    &-subtitle {
-      font-family: $arial-font;
-      position: absolute;
-      left: 0;
-      right: 0;
-      width: 86px;
-      bottom: -17px;
-      margin: 0 auto;
-      padding-left: 2px;
-      padding-right: 2px;
-      font-size: 12px;
-      line-height: 12px;
-      text-align: center;
-      background-color: $grey4;
-    }
+  &__subtitle {
+    font-family: $arial-font;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 86px;
+    bottom: -17px;
+    margin: 0 auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    background-color: $grey4;
   }
 
   &__caption {
@@ -109,60 +107,60 @@
     &__stats {
       display: flex;
       justify-content: space-between;
+    }
 
-      &-list {
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        padding: 0;
+    &__list {
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 72px;
+      justify-content: center;
+      width: 162px;
+      border: 1px solid $grey8;
+      border-radius: 5px;
+
+      &--weight {
+        margin-right: 42px;
       }
 
-      &-item {
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 72px;
-        justify-content: center;
-        width: 162px;
-        border: 1px solid $grey8;
-        border-radius: 5px;
-
-        &--weight {
-          margin-right: 42px;
-        }
-
-        &--day {
-          margin-left: 16px;
-        }
+      &--day {
+        margin-left: 16px;
       }
+    }
 
-      &-item--weight &-subtitle {
-        width: 120px;
-        bottom: -8px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 14px;
-        line-height: 14px;
-        background-color: $white;
-      }
+    &__item--weight &__subtitle {
+      width: 120px;
+      bottom: -8px;
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $white;
+    }
 
-      &-item--days &-subtitle {
-        width: 139px;
-        bottom: -8px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 14px;
-        line-height: 14px;
-        background-color: $white;
-      }
+    &__item--days &__subtitle {
+      width: 139px;
+      bottom: -8px;
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $white;
+    }
 
-      &-value {
-        position: relative;
-        font-size: 30px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: $black1;
-      }
+    &__value {
+      position: relative;
+      font-size: 30px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: $black1;
     }
 
     &__caption {
@@ -172,7 +170,7 @@
       text-align: right;
     }
 
-    &_inner {
+    &__inner {
       position: absolute;
       z-index: -1;
       left: 0;
@@ -214,61 +212,60 @@
     &__stats {
       width: 435px;
       flex-wrap: wrap;
+    }
 
+    &__list {
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 21px;
+    }
 
-      &-list {
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        padding: 0;
-        margin-bottom: 21px;
+    &__item {
+      position: relative;
+      width: 162px;
+      padding-top: 23px;
+      padding-bottom: 25px;
+      border: 1px solid $grey8;
+      border-radius: 5px;
+      text-align: center;
+
+      &--weight {
+        margin-right: 43px;
       }
 
-      &-item {
-        position: relative;
-        width: 162px;
-        padding-top: 23px;
-        padding-bottom: 25px;
-        border: 1px solid $grey8;
-        border-radius: 5px;
-        text-align: center;
-
-        &--weight {
-          margin-right: 43px;
-        }
-
-        &--day {
-          margin-left: 16px;
-        }
+      &--day {
+        margin-left: 16px;
       }
+    }
 
-      &-item--weight &-subtitle {
-        width: 120px;
-        bottom: -7px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 14px;
-        line-height: 14px;
-        background-color: $grey4;
-      }
+    &__item--weight &__subtitle {
+      width: 120px;
+      bottom: -7px;
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $grey4;
+    }
 
-      &-item--days &-subtitle {
-        width: 139px;
-        bottom: -7px;
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 14px;
-        line-height: 14px;
-        background-color: $grey4;
-      }
+    &__item--days &__subtitle {
+      width: 139px;
+      bottom: -7px;
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $grey4;
+    }
 
-      &-value {
-        position: relative;
-        font-size: 30px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: $black1;
-      }
+    &__value {
+      position: relative;
+      font-size: 30px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: $black1;
     }
 
     &__caption {
@@ -278,7 +275,7 @@
       text-align: left;
     }
 
-    &_inner {
+    &__inner {
       position: absolute;
       z-index: -1;
       left: 0;

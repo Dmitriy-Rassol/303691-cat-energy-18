@@ -2,14 +2,15 @@
   display: block;
 
   &--opened {
-    height: 195px;
-    display: block;
-    transition: height 0.4s ease-in-out;
+    height: 197px;
+    transition: height 0.4s, opacity 0.6s  ease-in-out;
+    opacity: 1;
   }
 
   &--closed {
-    display: none;
-    transition: height 0.4s ease-in-out;
+    height: 0;
+    transition: height 0.4s, opacity 0.1s ease-in-out;
+    opacity: 0;
   }
 
   &__list {
@@ -33,18 +34,18 @@
     color: $black;
     text-decoration: none;
     outline: none;
+  }
 
-    &:hover {
-      opacity: 0.6;
-    }
+  &__link:hover {
+    opacity: 0.6;
+  }
 
-    &:focus {
-      opacity: 0.6;
-    }
+  &__link:focus {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &__link:active {
+    opacity: 0.3;
   }
 }
 
@@ -116,18 +117,18 @@
       color: $white;
       text-decoration: none;
       outline: none;
+    }
 
-      &:hover {
-        opacity: 0.6;
-      }
+    &__list--index &__link:hover {
+      opacity: 0.6;
+    }
 
-      &:focus {
-        opacity: 0.6;
-      }
+    &__list--index &__link:focus {
+      opacity: 0.6;
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &__list--index &__link:active {
+      opacity: 0.3;
     }
 
     &__list--index &__item--active {

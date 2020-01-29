@@ -1,11 +1,11 @@
 var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.page-header__main-toggle');
-var open = document.querySelector('.main-toggle-icon--open');
-var close = document.querySelector('.main-toggle-icon--close');
+var navToggle = document.querySelector('.page-header__toggle');
+var open = document.querySelector('.main-toggle__icon--open');
+var close = document.querySelector('.main-toggle__icon--close');
 
 
   navMain.classList.add('main-nav--closed');
-  open.style.display = 'block';
+  navToggle.classList.remove('page-header__toggle--nojs');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
