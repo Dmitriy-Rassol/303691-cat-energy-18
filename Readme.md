@@ -1,4 +1,4 @@
-# [Личный проект «Кэт энерджи»] [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# [Личный проект «Кэт энерджи»](https://dmitriy-rassol.github.io/303691-cat-energy-18/) [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дима Рассоленко](https://up.htmlacademy.ru/adaptive/18/user/303691).
 * Наставник: Эрик Спичак.
